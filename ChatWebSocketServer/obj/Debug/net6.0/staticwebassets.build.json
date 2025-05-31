@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "L1Mu+1yJVLou1WLHbrOFBvAHJd+4IBADqCELBlesvWI=",
+  "Source": "ChatWebSocketServer",
+  "BasePath": "_content/ChatWebSocketServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

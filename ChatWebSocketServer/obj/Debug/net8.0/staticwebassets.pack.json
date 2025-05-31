@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/BuyNow.html",
+      "PackagePath": "staticwebassets/BuyNow.html"
+    },
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/Custom Runes.html",
+      "PackagePath": "staticwebassets/Custom Runes.html"
+    },
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/Digital Prints.html",
+      "PackagePath": "staticwebassets/Digital Prints.html"
+    },
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/JavaScript.js",
+      "PackagePath": "staticwebassets/JavaScript.js"
+    },
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/ShopFotos/Black Viking.jpeg",
+      "PackagePath": "staticwebassets/ShopFotos/Black Viking.jpeg"
+    },
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/ShopFotos/Face Color.jpeg",
+      "PackagePath": "staticwebassets/ShopFotos/Face Color.jpeg"
+    },
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/ShopFotos/Face gray.jpeg",
+      "PackagePath": "staticwebassets/ShopFotos/Face gray.jpeg"
+    },
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/ShopFotos/Face licht.jpeg",
+      "PackagePath": "staticwebassets/ShopFotos/Face licht.jpeg"
+    },
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/TechViking.html",
+      "PackagePath": "staticwebassets/TechViking.html"
+    },
+    {
+      "Id": "/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatWebSocketServer/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.ChatWebSocketServer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.ChatWebSocketServer.props",
+      "PackagePath": "build\\ChatWebSocketServer.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ChatWebSocketServer.props",
+      "PackagePath": "buildMultiTargeting\\ChatWebSocketServer.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ChatWebSocketServer.props",
+      "PackagePath": "buildTransitive\\ChatWebSocketServer.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

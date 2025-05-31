@@ -1,0 +1,1 @@
+const ws = new WebSocket('ws://192.168.181.148:5000/ws');

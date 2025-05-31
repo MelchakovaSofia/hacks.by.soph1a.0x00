@@ -1,0 +1,14 @@
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/bin/Debug/net8.0/ChatServer
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/bin/Debug/net8.0/ChatServer.deps.json
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/bin/Debug/net8.0/ChatServer.runtimeconfig.json
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/bin/Debug/net8.0/ChatServer.dll
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/bin/Debug/net8.0/ChatServer.pdb
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/obj/Debug/net8.0/ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/obj/Debug/net8.0/ChatServer.AssemblyInfoInputs.cache
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/obj/Debug/net8.0/ChatServer.AssemblyInfo.cs
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/obj/Debug/net8.0/ChatServer.csproj.CoreCompileInputs.cache
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/obj/Debug/net8.0/ChatServer.dll
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/obj/Debug/net8.0/refint/ChatServer.dll
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/obj/Debug/net8.0/ChatServer.pdb
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/obj/Debug/net8.0/ChatServer.genruntimeconfig.cache
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatServer/obj/Debug/net8.0/ref/ChatServer.dll

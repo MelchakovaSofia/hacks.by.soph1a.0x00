@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>Art Viking Shop</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .art-item {
+            border: 2px solid #000;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .art-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .art-item img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .art-item h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: #000;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #000;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #000;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .cart-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cart-icon a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cart-icon a:hover {
+            text-decoration: underline;
+        }
+
+        .cart-model {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Art Viking Gallery</h1>
+        <div class="cart-icon">
+            <a href="BuyNow.html">
+                <svg class="cart-model" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                My Shopping Cart (<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="art-item">
+            <img src="ShopFotos/Black Viking.jpeg" alt="Black Viking">
+            <h3>Black Viking</h3>
+            <p class="price">$4.99</p>
+            <button class="buy-button" onclick="addToCart('Black Viking', 4.99)">Buy Now</button>
+        </div>
+
+        <div class="art-item">
+            <img src="ShopFotos/Face gray.jpeg" alt="Face Gray">
+            <h3>Face Gray</h3>
+            <p class="price">$4.99</p>
+            <button class="buy-button" onclick="addToCart('Face Gray', 4.99)">Buy Now</button>
+        </div>
+
+        <div class="art-item">
+            <img src="ShopFotos/Face Color.jpeg" alt="Face Color">
+            <h3>Face Color</h3>
+            <p class="price">$4.99</p>
+            <button class="buy-button" onclick="addToCart('Face Color', 4.99)">Buy Now</button>
+        </div>
+
+        <div class="art-item">
+            <img src="ShopFotos/Face licht.jpeg" alt="Face Light">
+            <h3>Face Light</h3>
+            <p class="price">$4.99</p>
+            <button class="buy-button" onclick="addToCart('Face Light', 4.99)">Buy Now</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Art Viking Gallery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(itemName, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+            const existingItem = cart.find(item => item.name === itemName);
+            if (existingItem) {
+                existingItem.quantity = (existingItem.quantity || 1) + 1;
+            } else {
+                cart.push({
+                    name: itemName,
+                    price: price,
+                    quantity: 1
+                });
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            window.location.href = 'BuyNow.html';
+        }
+
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalItems = cart.reduce((total, item) => total + (item.quantity || 1), 0);
+            document.getElementById('cart-count').textContent = totalItems;
+        }
+
+
+        updateCartCount();
+    </script>
+</body>
+</html>

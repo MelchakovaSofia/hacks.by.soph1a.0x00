@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>NFT Checkout - TechViking Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ffffff;
+            --secondary: #000000;
+            --accent: #333333;
+            --opensea: #2081e2;
+            --rune-glow: rgba(255, 255, 255, 0.7);
+            --tech-lines: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--secondary);
+            color: var(--primary);
+            font-family: 'Cinzel', serif;
+            line-height: 1.6;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .circuit-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                linear-gradient(90deg, var(--tech-lines) 1px, transparent 1px) 0 0,
+                linear-gradient(0deg, var(--tech-lines) 1px, transparent 1px) 0 0;
+            background-size: 20px 20px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        header {
+            background-color: var(--accent);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, var(--rune-glow), transparent);
+            animation: headerGlow 3s infinite;
+        }
+
+        @keyframes headerGlow {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 0.3; }
+        }
+
+        .back-link {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--rune-glow);
+            transform: translateX(-5px);
+        }
+
+        .checkout-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .nft-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .nft-card {
+            background: var(--accent);
+            border: 1px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .nft-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px var(--rune-glow);
+        }
+
+        .nft-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .nft-title {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: var(--primary);
+        }
+
+        .nft-price {
+            font-size: 1.25rem;
+            color: var(--opensea);
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .opensea-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--opensea);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .opensea-button:hover {
+            background: #1569af;
+            transform: translateY(-2px);
+        }
+
+        .cart-summary {
+            background: var(--accent);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid var(--primary);
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid var(--tech-lines);
+            margin: 0.5rem 0;
+        }
+
+        .total {
+            font-size: 1.5rem;
+            color: var(--opensea);
+            text-align: right;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--tech-lines);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circuit-overlay"></div>
+
+    <a href="TechViking.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Continue Shopping
+    </a>
+
+    <header>
+        <h1>NFT Collection</h1>
+    </header>
+
+    <main class="checkout-container">
+        <div class="nft-grid">
+            <div class="nft-card">
+                <img src="https://via.placeholder.com/400x400" alt="TechViking Rune #1" class="nft-image">
+                <h2 class="nft-title">TechViking Rune #1</h2>
+                <p class="nft-price">
+                    <i class="fab fa-ethereum"></i> 0.1 ETH
+                </p>
+                <a href="https://opensea.io/de-DE" target="_blank" class="opensea-button">
+                    <i class="fas fa-shopping-cart"></i> Auf OpenSea kaufen
+                </a>
+            </div>
+
+            <div class="nft-card">
+                <img src="https://via.placeholder.com/400x400" alt="Cyber Odin #2" class="nft-image">
+                <h2 class="nft-title">Cyber Odin #2</h2>
+                <p class="nft-price">
+                    <i class="fab fa-ethereum"></i> 0.15 ETH
+                </p>
+                <a href="https://opensea.io/de-DE" target="_blank" class="opensea-button">
+                    <i class="fas fa-shopping-cart"></i> Auf OpenSea kaufen
+                </a>
+            </div>
+
+            <div class="nft-card">
+                <img src="https://via.placeholder.com/400x400" alt="Digital Valhalla #3" class="nft-image">
+                <h2 class="nft-title">Digital Valhalla #3</h2>
+                <p class="nft-price">
+                    <i class="fab fa-ethereum"></i> 0.2 ETH
+                </p>
+                <a href="https://opensea.io/de-DE" target="_blank" class="opensea-button">
+                    <i class="fas fa-shopping-cart"></i> Auf OpenSea kaufen
+                </a>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Collection Info</h2>
+            <div class="cart-item">
+                <span>Floor Price</span>
+                <span><i class="fab fa-ethereum"></i> 0.1 ETH</span>
+            </div>
+            <div class="cart-item">
+                <span>Total Items</span>
+                <span>100</span>
+            </div>
+            <div class="cart-item">
+                <span>Owners</span>
+                <span>45</span>
+            </div>
+            <p class="total">
+                <i class="fab fa-ethereum"></i> Volume: 25.5 ETH
+            </p>
+        </div>
+    </main>
+
+    <script>
+        // Add hover effects for NFT cards
+        document.querySelectorAll('.nft-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.transform = 'translateY(-10px)';
+                card.style.boxShadow = '0 0 30px var(--rune-glow)';
+            });
+
+            card.addEventListener('mouseout', () => {
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>

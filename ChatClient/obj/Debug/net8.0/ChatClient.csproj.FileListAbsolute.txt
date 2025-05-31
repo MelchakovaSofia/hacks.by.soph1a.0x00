@@ -1,0 +1,14 @@
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/bin/Debug/net8.0/ChatClient
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/bin/Debug/net8.0/ChatClient.deps.json
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/bin/Debug/net8.0/ChatClient.runtimeconfig.json
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/bin/Debug/net8.0/ChatClient.dll
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/bin/Debug/net8.0/ChatClient.pdb
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/obj/Debug/net8.0/ChatClient.GeneratedMSBuildEditorConfig.editorconfig
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/obj/Debug/net8.0/ChatClient.AssemblyInfoInputs.cache
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/obj/Debug/net8.0/ChatClient.AssemblyInfo.cs
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/obj/Debug/net8.0/ChatClient.csproj.CoreCompileInputs.cache
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/obj/Debug/net8.0/ChatClient.dll
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/obj/Debug/net8.0/refint/ChatClient.dll
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/obj/Debug/net8.0/ChatClient.pdb
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/obj/Debug/net8.0/ChatClient.genruntimeconfig.cache
+/home/soph1a-it-code/Dokumente/GitHub/hacks.by.soph1a.0x00/ChatClient/obj/Debug/net8.0/ref/ChatClient.dll
